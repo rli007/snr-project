@@ -8,7 +8,7 @@ from datetime import datetime
 from rag_utils import RAGSystem
 
 # groq api setup
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 MEMORY_FILE = "memory.txt"
 
